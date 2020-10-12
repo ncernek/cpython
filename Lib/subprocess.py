@@ -77,7 +77,7 @@ except ModuleNotFoundError:
     _mswindows = False
     import _posixsubprocess
     import select
-    import selectors
+    from Lib import selectors
 else:
     from _winapi import (CREATE_NEW_CONSOLE, CREATE_NEW_PROCESS_GROUP,
                          STD_INPUT_HANDLE, STD_OUTPUT_HANDLE,
